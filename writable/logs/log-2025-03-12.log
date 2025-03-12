@@ -1,0 +1,144 @@
+CRITICAL - 2025-03-12 03:47:39 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: create]
+in APPPATH\Controllers\Home.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 03:48:04 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: create]
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 03:48:47 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: create]
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 03:49:01 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: POST, Route: create]
+in APPPATH\Controllers\Home.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 10:45:55 --> mysqli_sql_exception: Unknown column 'title' in 'field list' in C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\codeigniter_4_rest_api\app\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\codeigniter_4_rest_api\app\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', Array)
+#6 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(933): App\Controllers\Home->create()
+#7 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter_4_rest_api\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter_4_rest_api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter_4_rest_api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-12 10:45:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'field list'
+[Method: POST, Route: create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 2 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 10:45:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 10:45:55\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 10:45:55\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 4 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 10:45:55 --> [Caused by] mysqli_sql_exception: Unknown column 'title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 10:45:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 10:45:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 10:45:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 5 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 11:25:02 --> mysqli_sql_exception: Unknown column 'title' in 'field list' in C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\codeigniter_4_rest_api\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\codeigniter_4_rest_api\app\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\codeigniter_4_rest_api\app\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', Array)
+#6 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(933): App\Controllers\Home->create()
+#7 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\codeigniter_4_rest_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter_4_rest_api\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter_4_rest_api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter_4_rest_api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-12 11:25:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'field list'
+[Method: POST, Route: create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 2 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 11:25:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 11:25:02\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 11:25:02\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 4 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 11:25:02 --> [Caused by] mysqli_sql_exception: Unknown column 'title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 11:25:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 11:25:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (\'Tina\', \'t@gmail.com\', \'title\', \'2025-03-12 11:25:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `email`, `title`, `creation_date`) VALUES (:name:, :email:, :title:, :creation_date:)', [...], false)
+ 5 APPPATH\Models\CommonModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(101): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->create()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
